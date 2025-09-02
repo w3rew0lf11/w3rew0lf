@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body">
+    <header class="header">
+      <a href="index.html" class="logo">werewolf</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <nav class="navbar">
+        <a href="index.html" class="active">welcome</a>
+        <a href="index.html#whoami">whoami</a>
+        <a href="index.html#creations">creations</a>
+        <a href="index.html#skills">creations</a>
+        <a href="blog.html">blogs</a>
+      <span class="active-nav"></span>
+      </nav>
+    </header>
+
+  <section class="blog-section">
+    <div class="blog-list-container">
+      <h2 class="heading">My <span>Blog</span> Posts & <span>Writeups</span> </h2>
+      <p class="subheading"style="font-size: 2rem;">Thoughts, tutorials, and insights about my journey</p>
+      
+      <div class="blog-grid">
+        <!-- Cards will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bloglist.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const blogGrid = document.querySelector('.blog-grid');
+      
+      blogs.forEach((blog, index) => {
+        const blogCard = document.createElement('div');
+        blogCard.className = 'blog-card';
+        blogCard.style.animationDelay = `${(index + 1) * 0.1}s`;
+        
+        blogCard.innerHTML = `
+          <div class="blog-card-image">
+            <img src="${blog.image || 'blog-images/default-blog.jpg'}" alt="${blog.title}" loading="lazy">
+          </div>
+          <div class="blog-card-content">
+            <h3>${blog.title}</h3>
+            <p>${blog.description || 'Click to read this interesting blog post...'}</p>
+            <div class="blog-card-meta">
+              <span><i class="far fa-calendar"></i> ${blog.date || 'Recent'}</span>
+              <span><i class="far fa-clock"></i> ${blog.readTime || '5 min read'}</span>
+            </div>
+            <a href="viewer.html?post=${blog.filename}" class="read-more">
+              Read More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        `;
+        
+        blogGrid.appendChild(blogCard);
+      });
+    });
+  </script>
+</body>
+</html>
