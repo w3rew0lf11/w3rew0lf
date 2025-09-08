@@ -8,5 +8,13 @@ const blogs = [
     readTime: "5 min read",
     image: "blog-images/SS7.png"
   },
+    {
+    title: "Imaginary CTF 2025",
+    filename: "imaginaryCTF2025.md",
+    description: "Writeup of the challange solved during imaginary CTF 2025",
+    date: "Sept 02, 2025",
+    readTime: "5 min read",
+    image: "blog-images/imaginary.png"
+  }
 
 ];
