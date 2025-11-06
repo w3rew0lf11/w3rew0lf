@@ -15,6 +15,23 @@ const blogs = [
     date: "Sept 02, 2025",
     readTime: "5 min read",
     image: "blog-images/imaginary.png"
+  },
+  {
+    title: "Rootme:Web-client",
+    filename: "rootmeWebClient.md",
+    description: "Writeup of the Rootme web client site challanges",
+    date: "Sept 02, 2025",
+    readTime: "5 min read",
+    image: "blog-images/Rootme.webp"
+  },
+    {
+    title: "SSRF",
+    filename: "SSRF.md",
+    description: "SSRF cheat notes",
+    date: "Sept 02, 2025",
+    readTime: "5 min read",
+    image: "blog-images/SSRF.avif"
   }
+
 
 ];
