@@ -4,7 +4,6 @@
 
 **Target:** `http://ctf.compfest.id:7302/`
 
-**Author:** Jenish (player)
 
 **Date:** 2025-10-05
 

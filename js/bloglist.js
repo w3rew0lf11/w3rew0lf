@@ -12,7 +12,7 @@ const blogs = [
     title: "Imaginary CTF 2025",
     filename: "imaginaryCTF2025.md",
     description: "Writeup of the challange solved during imaginary CTF 2025",
-    date: "Sept 02, 2025",
+    date: "Sept 14, 2025",
     readTime: "5 min read",
     image: "blog-images/imaginary.png"
   },
@@ -20,7 +20,7 @@ const blogs = [
     title: "Rootme:Web-client",
     filename: "rootmeWebClient.md",
     description: "Writeup of the Rootme web client site challanges",
-    date: "Sept 02, 2025",
+    date: "Oct 10, 2025",
     readTime: "5 min read",
     image: "blog-images/Rootme.webp"
   },
@@ -28,9 +28,17 @@ const blogs = [
     title: "SSRF",
     filename: "SSRF.md",
     description: "SSRF cheat notes",
-    date: "Sept 02, 2025",
+    date: "Nov 02, 2025",
     readTime: "5 min read",
     image: "blog-images/SSRF.avif"
+  },
+  {
+    title: "Dark side of Asteroid writeup",
+    filename: "dark_side_of_asteroid_writeup.md",
+    description: "Web challange from compfest CTF",
+    date: "Nov 07, 2025",
+    readTime: "5 min read",
+    image: "blog-images/compfest.jpeg"
   }
 
 
