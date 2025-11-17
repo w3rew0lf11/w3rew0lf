@@ -39,7 +39,22 @@ const blogs = [
     date: "Nov 07, 2025",
     readTime: "5 min read",
     image: "blog-images/compfest.jpeg"
+  },
+    {
+    title: "BuckeyeCTF 2025",
+    filename: "buckeyectf.md",
+    description: "Web challange from compfest CTF",
+    date: "Nov 07, 2025",
+    readTime: "10 min read",
+    image: "blog-images/buckeye.png"
+  },
+      {
+    title: "Interesting challange from v1t CTF",
+    filename: "trynnacrack.md",
+    description: "Forensics challange from v1t CTF",
+    date: "Nov 17, 2025",
+    readTime: "5 min read",
+    image: "blog-images/trynnacrack.png"
   }
-
-
+ 
 ];
