@@ -55,6 +55,14 @@ const blogs = [
     date: "Nov 17, 2025",
     readTime: "5 min read",
     image: "blog-images/trynnacrack.png"
+  },
+        {
+    title: "OAuth",
+    filename: "Oauth.md",
+    description: "Basic knowledge about Oauth 2.0 and its different flows",
+    date: "Dec 31, 2025",
+    readTime: "10 min read",
+    image: "blog-images/Oauth.png"
   }
  
 ];
